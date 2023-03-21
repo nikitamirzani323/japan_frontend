@@ -156,7 +156,7 @@
     <h2 class="text-[#7ea8da] text-lg lg:text-3xl text-center bg-white absolute -top-4 left-10 z-auto">{content_text_2}</h2>
 </section>
 
-<div class="overflow-x-auto m-10 p-2">
+<div class="overflow-x-auto lg:m-10 p-2 m-5">
     <table class="table table-compact w-full">
         <thead>
             <tr>

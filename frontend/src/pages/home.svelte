@@ -196,15 +196,14 @@
 <section class="hidden lg:flex">
     <Carousel />
 </section>
-<section class="lg:flex flex-col w-full gap-1 bg-[#ffda92] p-10">
+<section class="lg:flex w-full gap-1 bg-[#ffda92] p-2 lg:p-10">
     <center>
         <img class="w-5/6" src="images/imgwinning.png" alt="">
         <img class="w-1/2" src="images/imgwinningjapan.png" alt="">
         <span class="text-[#4fb47d]">Thurday , 16 Maret 2023</span>
-        <section class="lg:flex w-4/5 rounded-xl   bg-[#fff1d6] border-4 border-[#00989f] p-5 ">
-    
-            <div class="flex w-full gap-1 ">
-                <div class="card w-4/5  rounded-xl p-2 m-5 border-4 border-[#00989f] bg-[#ffda92]">
+        <section class="lg:flex w-full lg:w-4/5 rounded-xl   bg-[#fff1d6] border-4 border-[#00989f] p-2 lg:p-5 ">
+            <div class="flex flex-col lg:flex lg:flex-row w-full gap-1 ">
+                <div class="card w-full lg:w-4/5  rounded-xl lg:p-2 lg:m-5 border-4 border-[#00989f] bg-[#ffda92]">
                     <div class="card-body p-1 mb-1 ">
                         <center class="p-2 font-bold w-full">
                             <img src="images/shizoukaday4x.png" alt="">
@@ -240,7 +239,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card w-4/5 rounded-xl p-2 m-5 border-4 border-[#00989f] bg-[#ffda92]">
+                <div class="card w-full lg:w-4/5 rounded-xl lg:p-2 lg:m-5 border-4 border-[#00989f] bg-[#ffda92]">
                     <div class="card-body p-1 mb-1 ">
                         <center class="p-2 font-bold w-full">
                             <img src="images/shizoukanight4x.png" alt="">
@@ -283,22 +282,22 @@
 
 <section class="mt-0 bg-black">
     <center class="pt-10">
-        <span class="text-[#00989f] text-4xl ">
+        <span class="text-[#00989f] text-xl lg:text-4xl ">
             政府が管理する信頼できるウェブサイト
         </span>
-        <img class="w-4/5 mt-5" src="images/supportbank_2.png" alt="">
+        <img class="w-5/6 lg:w-4/5 mt-5" src="images/supportbank_2.png" alt="">
     </center>
     <div class="flex w-full justify-center items-stretch mt-5">
         <div class="flex gap-5 mt-2 self-center">
-            <img class="w-[40px]" src="images/visa.png" alt="">
-            <img class="w-[40px]" src="images/master.png" alt="">
-            <img class="w-[40px]" src="images/maestro.png" alt="">
-            <img class="w-[40px]" src="images/e_pro.png" alt="">
-            <img class="w-[40px]" src="images/age.png" alt="">
-            <img class="w-[40px]" src="images/curacao.png" alt="">
+            <img class="w-[20px] lg:w-[40px]" src="images/visa.png" alt="">
+            <img class="w-[20px] lg:w-[40px]" src="images/master.png" alt="">
+            <img class="w-[20px] lg:w-[40px]" src="images/maestro.png" alt="">
+            <img class="w-[20px] lg:w-[40px]" src="images/e_pro.png" alt="">
+            <img class="w-[20px] lg:w-[40px]" src="images/age.png" alt="">
+            <img class="w-[20px] lg:w-[40px]" src="images/curacao.png" alt="">
         </div>
     </div>
-    <center class="mt-20 pb-10">
+    <center class="mt-10 lg:mt-20 pb-10">
         <span class="text-[#00989f] text-lg">
             Copyright © 2020 - 静岡市 宝くじ
         </span>
