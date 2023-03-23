@@ -6,15 +6,9 @@
     let tab_night = ""
 
     let lang = localStorage.getItem("lang");
-    let content_text_1 = "";
+    let content_text_1 = "日にち";
     let content_text_2 = "結果";
-    if(lang == null || lang == "english"){
-        content_text_1 = "日にち";
-        content_text_2 = "結果";
-    }else{
-        content_text_1 = "日にち";
-        content_text_2 = "結果";
-    }
+   
     listvietnam = [
         {tgl:"March 1, 2022",prize_1:"1134",prize_2:"1532",prize_3:"0923"},
         {tgl:"March 2, 2022",prize_1:"2134",prize_2:"2532",prize_3:"1923"},
@@ -161,9 +155,9 @@
         <thead>
             <tr>
                 <th class="text-xs lg:text-lg text-center bg-[#ffda92] text-[#4fb47d]">{content_text_1}</th>
-                <th class="text-xs lg:text-lg text-center bg-[#ffda92] text-[#4fb47d]">PRIZE1</th>
-                <th class="text-xs lg:text-lg text-center bg-[#ffda92] text-[#4fb47d]">PRIZE2</th>
-                <th class="text-xs lg:text-lg text-center bg-[#ffda92] text-[#4fb47d]">PRIZE3</th>
+                <th class="text-xs lg:text-lg text-center bg-[#ffda92] text-[#4fb47d]">賞品1位</th>
+                <th class="text-xs lg:text-lg text-center bg-[#ffda92] text-[#4fb47d]">2等賞</th>
+                <th class="text-xs lg:text-lg text-center bg-[#ffda92] text-[#4fb47d]">3等賞</th>
             </tr>
         </thead>
         <tbody>
