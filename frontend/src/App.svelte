@@ -5,12 +5,10 @@
   import Footer from './lib/Footer.svelte'
   import Home from "./pages/home.svelte";
   import Result from "./pages/result.svelte";
-  import Payment from "./pages/payment.svelte";
-  import About from "./pages/about.svelte";
-  import Responsibility from "./pages/responsibility.svelte";
   import NotFound from "./pages/NotFound.svelte";
   export let path_api = "";
   let routes = "";
+  
   routes = {
 			"/": wrap({
 				component: Home,
@@ -28,15 +26,6 @@
             path_menu: "home",
 				},
 				component: Result,
-			}),
-      "/payment": wrap({
-				component: Payment,
-			}),
-      "/about": wrap({
-				component: About,
-			}),
-      "/responsibility": wrap({
-				component: Responsibility,
 			}),
 			"*": NotFound,
 	};

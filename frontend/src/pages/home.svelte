@@ -18,28 +18,8 @@
     const japanday = ref(db, "japanday");
     const japannight = ref(db, "japannight");
     
-    let lang = localStorage.getItem("lang");
-    let livedraw_text_1 = "";
-    let livedraw_text_2 = "";
-    let livedraw_text_3 = "";
-    let livedraw_text_4 = "";
-    let livedraw_text_5 = "";
-    let livedraw_text_6 = false;
-    if(lang == null || lang == "english"){
-        livedraw_text_1 = "WINNING NUMBER";
-        livedraw_text_2 = "6D RESULT";
-        livedraw_text_3 = "DRAW";
-        livedraw_text_4 = "DATE";
-        livedraw_text_5 = "We accept these payment method";
-        livedraw_text_6 = true;
-    }else{
-        livedraw_text_1 = "SỐ TRÚNG THƯỞNG";
-        livedraw_text_2 = "KẾT QUẢ 6D";
-        livedraw_text_3 = "VẼ TRANH";
-        livedraw_text_4 = "NGÀY";
-        livedraw_text_5 = "Chúng tôi chấp nhận các phương thức thanh toán này";
-        livedraw_text_6 = false;
-    }
+    
+   
     
   
     let date_draw = "";
@@ -171,26 +151,13 @@
             case "9":
                 urlimg = "images/ball-9.png";
                 break;
+            default:
+            urlimg = "images/ball-null.png";
+                break;
         }
         return urlimg;
     }
-    let listvietnam = [
-        {tgl:"2023-03-01",prize_1:"1134",prize_2:"1532",prize_3:"0923",prize_4:"2123"},
-        {tgl:"2023-03-01",prize_1:"2134",prize_2:"2532",prize_3:"1923",prize_4:"2123"},
-        {tgl:"2023-03-01",prize_1:"3134",prize_2:"3532",prize_3:"2923",prize_4:"2123"},
-        {tgl:"2023-03-01",prize_1:"4134",prize_2:"4532",prize_3:"3923",prize_4:"2123"},
-        {tgl:"2023-03-01",prize_1:"5134",prize_2:"5532",prize_3:"4923",prize_4:"2123"},
-        {tgl:"2023-03-01",prize_1:"6134",prize_2:"6532",prize_3:"5923",prize_4:"2123"},
-        {tgl:"2023-03-01",prize_1:"7134",prize_2:"7532",prize_3:"6923",prize_4:"2123"},
-        {tgl:"2023-03-01",prize_1:"8134",prize_2:"8532",prize_3:"7923",prize_4:"2123"},
-        {tgl:"2023-03-01",prize_1:"9134",prize_2:"9532",prize_3:"8923",prize_4:"2123"},
-        {tgl:"2023-03-01",prize_1:"0134",prize_2:"0532",prize_3:"9923",prize_4:"2123"},
-        {tgl:"2023-03-01",prize_1:"2234",prize_2:"1632",prize_3:"0023",prize_4:"2123"},
-        {tgl:"2023-03-01",prize_1:"2334",prize_2:"1732",prize_3:"0123",prize_4:"2123"},
-        {tgl:"2023-03-01",prize_1:"2434",prize_2:"1832",prize_3:"0223",prize_4:"2123"},
-        {tgl:"2023-03-01",prize_1:"2534",prize_2:"1932",prize_3:"0323",prize_4:"2123"},
-        {tgl:"2023-03-01",prize_1:"2634",prize_2:"1032",prize_3:"0423",prize_4:"2123"},
-    ];
+    
    
   </script>
 <section class="hidden lg:flex">
@@ -289,12 +256,12 @@
     </center>
     <div class="flex w-full justify-center items-stretch mt-5">
         <div class="flex gap-5 mt-2 self-center">
-            <img class="w-[20px] lg:w-[40px]" src="images/visa.png" alt="">
-            <img class="w-[20px] lg:w-[40px]" src="images/master.png" alt="">
-            <img class="w-[20px] lg:w-[40px]" src="images/maestro.png" alt="">
-            <img class="w-[20px] lg:w-[40px]" src="images/e_pro.png" alt="">
-            <img class="w-[20px] lg:w-[40px]" src="images/age.png" alt="">
-            <img class="w-[20px] lg:w-[40px]" src="images/curacao.png" alt="">
+            <img class="w-[20px] h-[20px] lg:w-[40px] lg:h-[20px]" src="images/visa.png" alt="">
+            <img class="w-[20px] h-[20px] lg:w-[40px] lg:h-[20px]" src="images/master.png" alt="">
+            <img class="w-[20px] h-[20px] lg:w-[40px] lg:h-[20px]" src="images/maestro.png" alt="">
+            <img class="w-[20px] h-[20px] lg:w-[40px] lg:h-[20px]" src="images/e_pro.png" alt="">
+            <img class="w-[20px] h-[20px] lg:w-[30px] lg:h-[30px] lg:-mt-1.5" src="images/age.png" alt="">
+            <img class="w-[20px] h-[20px] lg:w-[30px] lg:h-[30px] lg:-mt-1.5" src="images/curacao.png" alt="">
         </div>
     </div>
     <center class="mt-10 lg:mt-20 pb-10">

@@ -1,38 +1,23 @@
 <script>
     import { link } from "svelte-spa-router";
-    export let path_menu;
-    let lang = localStorage.getItem("lang");
-    if(lang == null){
-      localStorage.setItem("lang", "vietnam");
-    }
+    let path_menu;
     let color_tab_menu = "text-[#e7ca40]"
     let content_text_1 = "ホームページ";
     let content_text_2 = "結果";
    
-    if(lang == null || lang == "english"){
-        content_text_1 = "HOME";
-        content_text_2 = "RESULT";
-    }else{
-        content_text_1 = "ホームページ";
-        content_text_2 = "結果";
-    }
-    console.log(path_menu)
     if (path_menu == "home"){
       color_tab_menu = "text-[#e7ca40]"
     }else{
       color_tab_menu = "text-[#20a5ab]"
     }
-    const changeCountry = (e) => {
-      localStorage.setItem("lang", e);
-      window.location.href = "/";
-    };
+    
 </script>
 <main class="w-full max-w-6xl mx-auto">
   
-  <nav class="navbar  w-full bg-black lg:bg-transparent">
+  <nav class="navbar  w-full  ">
     <div class="flex-1 w-full">
-      <a class="btn btn-ghost  normal-case text-xl text-center" use:link href="/">
-        <img class="w-[150px] lg:w-[250px] lg:-mt-8" src="images/logojapan.png" alt="静岡市 Lottery">
+      <a class="normal-case text-xl text-center" use:link href="/">
+        <img class="w-[150px] lg:w-[250px] " src="images/logojapan.png" alt="静岡市 Lottery">
       </a>
     </div>
     <div class="flex-none ">
